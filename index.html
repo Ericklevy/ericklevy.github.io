@@ -437,6 +437,7 @@
       <a class="logo" href="#topo">EL.</a>
       <div class="links">
         <a href="#casos">Projetos</a>
+        <a href="#bot">Bot</a>
                 <a href="#grupo">Em grupo</a>
         <a href="#skills">Skills</a>
         <a href="#contato">Contato</a>
@@ -760,6 +761,44 @@
         </div>
       </div>
     </article>
+  </div>
+</section>
+
+<!-- ================= BOT ================= -->
+<section id="bot">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="sec-tag eyebrow">Projeto novo · no ar</p>
+      <div>
+        <h2>Resumo Gamer: bot de notícias e promoções</h2>
+        <p>Um bot do Telegram que lê os principais sites de games, junta as notícias repetidas, traduz para português com IA e publica um resumo todo dia, com as melhores promoções de PC.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="item reveal">
+        <div class="kind">O que faz</div>
+        <h4><a href="https://github.com/Ericklevy/game-news-bot">game-news-bot</a></h4>
+        <ul>
+          <li>coleta IGN, GameSpot, Eurogamer e PC Gamer</li>
+          <li>separa por plataforma e junta notícias repetidas</li>
+          <li>traduz com IA e nunca repete um envio</li>
+          <li>comandos /agora e /status no Telegram</li>
+        </ul>
+        <div class="langs">Python · Telegram Bot API · SQLite</div>
+      </div>
+      <div class="item reveal d1">
+        <div class="kind">IA sem depender de um fornecedor</div>
+        <h4>Quatro provedores em fila</h4>
+        <p>A tradução tenta OpenRouter, Groq, Gemini e SambaNova em ordem. Se um falhar ou estourar o limite, passa para o próximo; se todos falharem, o resumo sai em inglês. Tudo numa única chamada por dia, dentro dos planos gratuitos.</p>
+        <div class="langs">LLMs · API compatível com OpenAI</div>
+      </div>
+      <div class="item reveal d2">
+        <div class="kind">Infraestrutura · R$ 0</div>
+        <h4>No ar 24 horas de graça</h4>
+        <p>Roda em Docker numa máquina Always Free da Oracle Cloud, com reinício automático. O CI no GitHub Actions roda 43 testes a cada push, todos sem internet, com feeds e APIs simulados.</p>
+        <div class="langs">Docker · Oracle Cloud · GitHub Actions · pytest</div>
+      </div>
+    </div>
   </div>
 </section>
 
